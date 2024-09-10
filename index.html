@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="signup-section">
+            <header>Signup</header>
+
+            <div class="social-buttons">
+                <button><i class='bx bxl-google'></i> Use Google</button>
+                <button><i class='bx bxl-apple'></i> Use Apple</button>
+            </div>
+
+            <div class="separator">
+                <div class="line"></div>
+                <p>Or</p>
+                <div class="line"></div>
+            </div>
+
+            <form id="signupForm" onsubmit="return validateSignupForm()">
+                <input type="text" name="fullName" id="fullName" placeholder="Full name" required>
+                <input type="ID_Card_Number" name="ID_Card_Number" id="ID_Card_Number" placeholder="ID Card Number" required>
+                <input type="email" name="email" id="email" placeholder="Email address" required>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <button type="submit" class="btn">Signup</button>
+            </form>
+
+            <!-- Add this div to display the alert message -->
+            <div id="alertMessage" class="alert-message"></div>
+
+        </div>
+
+        <div class="login-section">
+            <header>Login</header>
+
+            <div class="social-buttons">
+                <button><i class='bx bxl-google'></i> Use Google</button>
+                <button><i class='bx bxl-apple'></i> Use Apple</button>
+            </div>
+
+            <div class="separator">
+                <div class="line"></div>
+                <p>Or</p>
+                <div class="line"></div>
+            </div>
+
+            <form id="loginForm">
+                <input type="email" name="email" placeholder="Email address" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <a href="#">Forget Password?</a>
+                <button type="submit" class="btn">Login</button>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/invalid.js"></script>
+</body>
+
+</html>
