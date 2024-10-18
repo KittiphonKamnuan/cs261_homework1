@@ -210,9 +210,97 @@ button[type="submit"]:disabled {
     margin: 0 10px;
     color: #777;
 }
-@media (max-width: 480px) {
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#rememberMe {
+    margin-right: 5px;
+}
+
+#forgotPassword {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+#forgotPassword:hover {
+    color: #2980b9;
+}
+
+/* Existing styles remain the same */
+
+/* Tablet Styles */
+@media (max-width: 768px) {
     .login-container {
-        width: 90%;
+        width: 80%;
+        max-width: 500px;
         padding: 30px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    select,
+    button[type="submit"] {
+        font-size: 16px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    body {
+        padding: 20px;
+    }
+
+    .login-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .input-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    select,
+    button[type="submit"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .remember-forgot {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #forgotPassword {
+        margin-top: 10px;
+    }
+
+    .separator {
+        margin: 15px 0;
+    }
+
+    .g_id_signin {
+        display: flex;
+        justify-content: center;
     }
 }
